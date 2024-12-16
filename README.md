@@ -1,4 +1,4 @@
-# Weather Forecast API
+# Weather API Service
 
 This project is a FastAPI service that fetches weather data from the OpenWeatherMap API. Data is cached in S3 and logged in DynamoDB.
 
@@ -12,7 +12,7 @@ This project is a FastAPI service that fetches weather data from the OpenWeather
 2. **Build the Docker image:**
 
    ```bash
-   docker build -t weather-forecast-api .
+   docker build -t weather-api-service .
 
    
 3. **Run the Docker container:**
