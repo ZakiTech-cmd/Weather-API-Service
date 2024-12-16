@@ -28,7 +28,5 @@ async def get_weather(city: str = Query(..., description="City name")):
     await log_to_dynamodb(city, timestamp, file_url)
 
     return JSONResponse(content={
-        "weather_data": weather_data,
-        "file_url": file_url,
-        "logged_at": timestamp
+        "weather_data": weather_data
     })
